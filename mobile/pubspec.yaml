@@ -1,0 +1,39 @@
+name: edge
+description: The edge mobile application.
+publish_to: 'none'
+
+version: 0.0.1+1
+
+environment:
+  sdk: ">=2.7.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  custom_render_object_widget:
+    git: git://github.com/dcov/custom_render_object_widget.git
+
+  muex:
+    git:
+      url: git://github.com/dcov/muex.git
+      path: muex
+
+  muex_flutter:
+    git:
+      url: git://github.com/dcov/muex.git
+      path: muex_flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  build_runner: 1.10.0
+
+  muex_gen:
+    git:
+      url: git://github.com/dcov/muex.git
+      path: muex_gen
+
+flutter:
+  uses-material-design: true
